@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 a {
@@ -22,24 +22,11 @@ a {
     text-decoration: none;
 }
 
-#grid {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    row-gap: .5vw;
-    column-gap: .5vw;
-}
 
 
 /*----------- Header -----------*/
 
 header {
-    grid-area: header;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
@@ -60,70 +47,28 @@ header {
 /*------------ Nav -------------*/
 
 nav {
-    grid-area: nav;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
     text-align: center;
-
 }
 
-.nav__responsive-ul {
-    display: none;
+.nav-link {
+    color: rgb(255, 255, 255);
 }
 
-.nav__li {
-    display: inline-block;
-    align-items: center;
+.nav-link:hover {
+    color: rgb(255, 0, 0);
+}
+
+.navbar-brand {
+    color: rgb(255, 0, 0);
+}
+
+.nav-item {
     padding: 10px;
-    
 }
 
-
-.nav__li:hover {
-    color: rgb(0, 255, 255);
-    cursor: pointer;
-}
-
-.a__nav:hover {
-    color: rgb(0, 255, 255);
-    cursor: pointer;
-}
-
-.nav__responsive-button-container {
-    position: absolute;
-    width: 100%;
-    font-size: 20px;
-    background-color: rgb(147, 11, 11);
-    margin-top: -64px;
-    z-index: 100;
-}
-
-.nav__responsive-button {
-    padding: 6px 20px;
-    text-align: right;
-    width: 100%;
-}
-
-.nav__responsive-li {
-    width: 100%;
-
-}
-
-.nav__responsive-li i {
-    box-sizing: border-box;
-    text-align: left;
-    margin-right: 5px;
-    width: 20px;
-    color: rgb(0, 255, 255)
-}
-
-.nav__responsive-li a {
-    color: rgb(0, 255, 255)
-}
-
-.nav__responsive-ul:hover > .nav__li-container {
-    top: -27px;
-}
+/* .bg-dark {
+    background-color: transparent !important;
+} */
 
 /*------------ Main ------------*/
 
@@ -135,7 +80,7 @@ h1 {
 }
 
 h3 {
-    color: rgb(98 166 177);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
@@ -149,17 +94,9 @@ h5 {
 }
 
 main {
-    grid-area: main;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     justify-content: center;
-}
-section
-{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
 }
 
 .imgContenedor {
@@ -177,7 +114,8 @@ section
 .fondoindex {
     background-image: url(../images/fondoindex2.jpg);
     background-size: cover;
-    text-align: center;
+    background-position: center;
+    
 }
 
 .fondoEmpresas {
@@ -212,7 +150,7 @@ section
 }
 
 #txtContacto {
-    color: rgb(98 166 177);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
@@ -225,6 +163,10 @@ section
 .inputForm {
     box-shadow: 1px 1px rgb(0, 0, 0);
     border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
 }
 
 .animaciones {
@@ -340,7 +282,6 @@ button:hover::after {
 /*----------- Footer -----------*/
 
 footer {
-    grid-area: footer;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -353,92 +294,19 @@ footer {
 }
 
 .footer__li:hover {
-    color: rgb(0, 255, 255);
+    color: rgb(255, 0, 0);
     cursor: pointer;
 }
 
 
 .a__footer:hover {
-    color: rgb(0, 255, 255);
+    color: rgb(255, 0, 0);
     cursor: pointer;
 } 
 
 .copy {
     border-bottom: 1px solid rgb(255, 255, 255);
 
-}
-
-
-/*--------- Responsive ---------*/
-
-
-
-@media screen and (max-width: 652px) {
-
-    .imgContenedor {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    display: inline;
-    }
-
-    .nav__ul {
-        display: none;
-    }
-
-    .nav {
-        height: 37px;
-        width: 100%;
-    }
-
-    .nav__responsive-ul {
-        display: block;
-        position: absolute;
-        width: 100%;
-        margin-top: 37px;
-        padding-top: 27px;
-        height: 37px;
-    }
-
-    .nav__li-container {
-        position: relative;
-        top: -1000px;
-        height: calc(100vh - 64px);
-        background-color: rgb(147, 11, 11);
-        transition: all -1s;
-        z-index: 1;
-        width: 75%;
-        padding-top: 27px;
-    }
-
-    .nav__responsive-li {
-        width: 100%;
-        padding: 9px 20px;
-    }
-
-    .nav__responsive-li i {
-        box-sizing: border-box;
-        text-align: center;
-        margin-right: 5px;
-        width: 30px;
-        color: rgb(255, 255, 255);
-    }
-
-    .nav__responsive-li a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-    }
-
-    .nav__responsive-ul:hover > .nav__li-container {
-        top: -27px;
-        
-    }
-
-    .border {
-    border: .2vw solid rgb(147, 11, 11);
-    margin: 5px;
-    }
-    
 }
 
 .border {
