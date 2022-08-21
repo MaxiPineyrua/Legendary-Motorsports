@@ -67,7 +67,7 @@ nav {
 }
 
 /* .bg-dark {
-    background-color: transparent !important;
+    background-color: red !important;
 } */
 
 /*------------ Main ------------*/
@@ -118,24 +118,27 @@ main {
     
 }
 
+
 .fondoEmpresas {
     background-image: url(../images/empresas.jpg);
     background-size: cover;
     text-align: center;
+    background-position: center;
 }
 
 .descEmpresas {
     font-size: 12px;
 }
 
-#empresas {
-    background-color: rgb(255, 255, 255);
-}
 
 .fondoNosotros {
     background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
     text-align: center;
     padding: 5vw;
+}
+
+#nosotros {
+    text-align: center;
 }
 
 .txtContenedor {
@@ -147,6 +150,7 @@ main {
     background-image: url(../images/contacto.jpg);
     text-align: center;
     background-size: cover;
+    background-position: center;
 }
 
 #txtContacto {
@@ -167,6 +171,7 @@ main {
 
 .card-body {
     text-align: center;
+    background-color: rgb(0, 0, 0);
 }
 
 .animaciones {
@@ -179,104 +184,19 @@ main {
 
 }
 
+#empresas {
+    background-color: rgb(255, 255, 255);
+}
+
+.accordion-item {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+
 @keyframes animacionFondo {
     from {background-color: rgb(0, 0, 255);}
     to {background-color: rgb(0, 0, 0);}
-}
-
-button,
-button::after {
- padding: 16px 20px;
- font-size: 18px;
- background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
- border: 0;
- color: #fff;
- letter-spacing: 3px;
- line-height: 1;
- box-shadow: 6px 0px 0px #00e6f6;
- outline: transparent;
- position: relative;
-}
-
-button::after {
- --slice-0: inset(50% 50% 50% 50%);
- --slice-1: inset(80% -6px 0 0);
- --slice-2: inset(50% -6px 30% 0);
- --slice-3: inset(10% -6px 85% 0);
- --slice-4: inset(40% -6px 43% 0);
- --slice-5: inset(80% -6px 5% 0);
- content: "APROBADO? :D";
- display: block;
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
- text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
- clip-path: var(--slice-0);
-}
-
-button:hover::after {
- animation: 1s glitch;
- animation-timing-function: steps(2, end);
-}
-
-@keyframes glitch {
- 0% {
-  clip-path: var(--slice-1);
-  transform: translate(-20px, -10px);
- }
-
- 10% {
-  clip-path: var(--slice-3);
-  transform: translate(10px, 10px);
- }
-
- 20% {
-  clip-path: var(--slice-1);
-  transform: translate(-10px, 10px);
- }
-
- 30% {
-  clip-path: var(--slice-3);
-  transform: translate(0px, 5px);
- }
-
- 40% {
-  clip-path: var(--slice-2);
-  transform: translate(-5px, 0px);
- }
-
- 50% {
-  clip-path: var(--slice-3);
-  transform: translate(5px, 0px);
- }
-
- 60% {
-  clip-path: var(--slice-4);
-  transform: translate(5px, 10px);
- }
-
- 70% {
-  clip-path: var(--slice-2);
-  transform: translate(-10px, 10px);
- }
-
- 80% {
-  clip-path: var(--slice-5);
-  transform: translate(20px, -10px);
- }
-
- 90% {
-  clip-path: var(--slice-1);
-  transform: translate(-10px, 0px);
- }
-
- 100% {
-  clip-path: var(--slice-1);
-  transform: translate(0);
- }
 }
 
 /*----------- Footer -----------*/
