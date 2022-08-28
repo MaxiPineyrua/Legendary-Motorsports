@@ -1,0 +1,11 @@
+.fondoNosotros {
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+    text-align: center;
+    padding: 5vw;
+}
+
+.accordion-item {
+    color: $colorBlanco;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}

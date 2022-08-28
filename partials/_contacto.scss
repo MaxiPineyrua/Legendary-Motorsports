@@ -1,0 +1,21 @@
+.fondoContacto {
+    background-image: url(../images/contacto.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+
+    #tituloContacto {
+        color: $colorNegro;
+        text-shadow: 1px 1px rgb(255, 255, 255);
+    }
+
+    #txtContacto {
+        color: $colorBlanco;
+        text-shadow: 1px 1px rgb(0, 0, 0);
+    }
+}
+
+.inputForm {
+    box-shadow: 1px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+}

@@ -1,0 +1,20 @@
+/*------------ Nav ------------*/
+
+nav {
+    text-align: center;
+}
+
+.nav-link {
+    color: $colorBlanco;
+        &:hover {
+            color: $colorRojo;
+        }
+}
+
+.navbar-brand {
+    color: $colorRojo;
+}
+
+.nav-item {
+    padding: 10px;
+}

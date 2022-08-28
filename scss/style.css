@@ -1,0 +1,264 @@
+/*------------ Generales ------------*/
+* {
+  padding: 0vw;
+  margin: 0vw;
+  box-sizing: border-box;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.titulo {
+  font-family: "Merriweather", serif;
+}
+
+.subtitulo {
+  font-family: "Athiti", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*------------ Header ------------*/
+header {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+header .logoHeader {
+  width: 40vw;
+}
+header .lamboHeader {
+  width: 45vw;
+}
+header #slogan {
+  font-size: 3vw;
+  margin: 2vw;
+}
+
+/*------------ Nav ------------*/
+nav {
+  text-align: center;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+.nav-link:hover {
+  color: rgb(255, 0, 0);
+}
+
+.navbar-brand {
+  color: rgb(255, 0, 0);
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+/*------------ Main ------------*/
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px rgb(100, 15, 15);
+  padding: 20px;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+h5 {
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  background-color: rgb(147, 11, 11);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+main {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+/*------------ Footer ------------*/
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+}
+footer li {
+  display: inline-block;
+  margin: 10px;
+}
+footer li:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.a__footer:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.copy {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.border {
+  border: 0.4vw solid rgb(147, 11, 11);
+  margin: 15px;
+}
+
+.fondoindex {
+  background-image: url(../images/fondoindex2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.fondoEmpresas {
+  background-image: url(../images/empresas.jpg);
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+}
+
+.descEmpresas {
+  font-size: 12px;
+}
+
+#empresas {
+  background-color: rgb(255, 255, 255);
+}
+
+.fondoContacto {
+  background-image: url(../images/contacto.jpg);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+.fondoContacto #tituloContacto {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}
+.fondoContacto #txtContacto {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.inputForm {
+  box-shadow: 1px 1px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.fondoNosotros {
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 0));
+  text-align: center;
+  padding: 5vw;
+}
+
+.accordion-item {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+  border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+
+/*------------ Animaciones ------------*/
+.animaciones {
+  background-color: rgb(0, 0, 255);
+  -webkit-animation-name: animacionFondo;
+          animation-name: animacionFondo;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.tracking-in-expand {
+  animation: tracking-in-expand 4s ease-out infinite alternate-reverse backwards;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.focus-in-contract {
+  -webkit-animation: focus-in-contract 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+          animation: focus-in-contract 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animacionFondo {
+  from {
+    background-color: rgb(0, 0, 255);
+  }
+  to {
+    background-color: rgb(0, 0, 0);
+  }
+}
+@keyframes animacionFondo {
+  from {
+    background-color: rgb(0, 0, 255);
+  }
+  to {
+    background-color: rgb(0, 0, 0);
+  }
+}/*# sourceMappingURL=style.css.map */

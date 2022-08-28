@@ -1,0 +1,25 @@
+/*------------ Generales ------------*/
+
+* {
+    padding: 0vw;
+    margin: 0vw;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.titulo {
+    font-family: 'Merriweather', serif;
+}
+
+.subtitulo {
+    font-family: 'Athiti', sans-serif;
+}
+
+body {
+    background-color: $colorNegro;
+}
+
+a {
+    color: $colorBlanco;
+    text-decoration: none;
+}

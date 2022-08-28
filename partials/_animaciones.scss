@@ -1,0 +1,50 @@
+/*------------ Animaciones ------------*/
+
+.animaciones {
+    background-color: rgb(0, 0, 255);
+    animation-name: animacionFondo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0ms;
+
+}
+
+.tracking-in-expand {
+	animation: tracking-in-expand 4s ease-out infinite alternate-reverse backwards;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.focus-in-contract {
+	animation: focus-in-contract 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+@keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+}
+  
+
+@keyframes animacionFondo {
+    from {background-color: rgb(0, 0, 255);}
+    to {background-color: rgb(0, 0, 0);}
+}
