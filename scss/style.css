@@ -1,3 +1,12 @@
+h6 {
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  background-color: rgb(147, 11, 11);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
 /*------------ Generales ------------*/
 * {
   padding: 0vw;
@@ -96,15 +105,16 @@ footer {
 footer li {
   display: inline-block;
   margin: 10px;
-}
-footer li:hover {
-  color: rgb(255, 0, 0);
   cursor: pointer;
 }
-
-.a__footer:hover {
-  color: rgb(255, 0, 0);
-  cursor: pointer;
+footer li .facebook:hover {
+  color: rgb(50, 15, 200);
+}
+footer li .twitter:hover {
+  color: rgb(0, 240, 255);
+}
+footer li .instagram:hover {
+  color: rgb(255, 0, 150);
 }
 
 .copy {

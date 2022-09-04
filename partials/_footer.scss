@@ -8,21 +8,23 @@ footer {
     li {
         display: inline-block;
         margin: 10px;
-            &:hover {
-                color: $colorRojo;
-                cursor: pointer;
-            }
+        cursor: pointer;
+        .facebook:hover {
+            color: map-get($redes, colorFacebook);
+        }
+        .twitter:hover {
+            color: map-get($redes, colorTwitter);
+        }
+        .instagram:hover {
+            color: map-get($redes, colorInstagram);
+        }
+
+        
     }
 }
 
-.a__footer:hover {
-     color: $colorRojo;
-     cursor: pointer;
-} 
-
 .copy {
     border-bottom: 1px solid rgb(255, 255, 255);
-
 }
 
 .border {

@@ -20,6 +20,10 @@ h5 {
     cursor: pointer;
 }
 
+h6 {
+    @extend %h5;
+}
+
 main {
     background-color: $colorNegro;
     color: $colorBlanco;
