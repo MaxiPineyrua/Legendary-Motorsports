@@ -30,6 +30,18 @@ body {
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  z-index: 2;
+}
+
+.botonArriba {
+  margin: 3rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  z-index: 100;
+  font-size: 10vh;
+  text-shadow: 2px 2px rgb(155, 0, 0);
 }
 
 /*------------ Header ------------*/
@@ -135,6 +147,15 @@ footer li .instagram:hover {
 .card-body {
   text-align: center;
   background-color: rgb(0, 0, 0);
+}
+
+.card {
+  margin-bottom: 3vh;
+}
+
+.card:hover {
+  box-shadow: 0px 15px 30px 0px rgba(255, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .fondoEmpresas {

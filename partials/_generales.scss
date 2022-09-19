@@ -22,4 +22,17 @@ body {
 a {
     color: $colorBlanco;
     text-decoration: none;
+    z-index: 2;
+}
+
+.botonArriba {
+    margin: 3rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    z-index: 100;
+    font-size: 10vh;
+    text-shadow: 2px 2px rgb(155, 0, 0);
+    
 }
